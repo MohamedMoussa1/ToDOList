@@ -1,0 +1,97 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #1D2B64;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #F8CDDA, #1D2B64);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F8CDDA, #1D2B64); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+h1 {
+    background: steelblue;
+    color: white;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    background: white;
+    height: 40px;
+    line-height: 40px;
+}
+
+.addTodo {
+    
+    width: 100%;
+    
+    background-color: #f7f7f7;
+    padding: 13px 13px 13px 20px;
+}
+
+.addTodo:focus {
+    border: 3px solid steelblue;
+}
+
+input {
+    font-size: 20px;
+    box-sizing: border-box;
+    color: steelblue;
+    border: 3px solid rgba(0,0,0,0);
+}
+
+input:focus {
+    background: white;
+    border: 3px solid rgba(0,0,0,0);
+    outline: none;
+}
+
+.addName {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+li:nth-child(2n){
+    background: #f7f7f7;
+}
+
+#container {
+    width: 360px;
+    margin: 100px auto;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0,0,0,0.2);
+}
+.done {
+    color: grey;
+    text-decoration: line-through;
+}
+
+.fa-plus {
+    float: right;
+}
+
+.fa-trash-alt {
+    color: red;
+}
+
+.delete {
+    height: 40px;
+    text-align: center;
+    margin-right: 20px;
+    width: 0;
+    display: inline-block;
+    background: pink;
+    opacity: 0;
+    transition: 0.2s linear;
+}
+
+li:hover .delete {
+    width: 40px;
+    opacity: 1;
+}
